@@ -2,7 +2,7 @@
   <div class="swiper">
   <swiper :options="swiperOptions">
     <swiper-slide v-for="item in swiperList" :key="item.id">
-      <img class="swiper-img" :src="item.imgURL" alt="华清宫">
+      <img class="swiper-img" :src="item.imgURL">
     </swiper-slide>
     <div class="swiper-pagination" slot="pagination"></div>
   </swiper>
@@ -34,7 +34,7 @@ export default {
 
 <style lang="stylus" scoped>
   .swiper >>> .swiper-pagination-bullet-active
-    background: #fff
+    background: #ccc
   .swiper 
     overflow: hidden
     width: 100%
